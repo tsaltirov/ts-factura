@@ -50,7 +50,7 @@ async generatePdf(res: Response, id_fact: string) {
 
 
     // Definir las columnas
-const columns = ['Descripción', 'Cantidad', 'BaseImponible'];
+const columns = ['Descripción', 'Cantidad', 'Precio', 'Importe'];
 
 
 // Establecer el ancho de las columnas y el espacio entre ellas

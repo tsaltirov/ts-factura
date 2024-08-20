@@ -38,7 +38,16 @@ export class Factura extends Document{
   descripcion: string [];
 
   @Prop()
-  baseImponible: number [];
+  cantidad: number [];
+
+  @Prop()
+  precio: number [];
+
+  @Prop()
+  importe: number [];
+
+  @Prop()
+  baseImponible: number;
 
   @Prop()
   impuestos: string = '21%';

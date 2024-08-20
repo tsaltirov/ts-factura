@@ -86,14 +86,40 @@ export class CreateFacturaDto {
     descripcion: string [];
 
     @ApiProperty({
-        example: [21.50, 22.50],
+        example: [2,3],
+        description: 'cantidad (horas)',
+        format: 'number',
+    })
+    @IsArray()
+    @IsNotEmpty()
+    cantidad: number [];
+
+    @ApiProperty({
+        example: [33.5,22.5],
+        description: 'precio',
+        format: 'numbernp',
+    })
+    @IsArray()
+    @IsNotEmpty()
+    precio: number [];
+
+    @ApiProperty({
+        example: [55.5,48.6],
+        description: 'importe',
+        format: 'number',
+    })
+    @IsArray()
+    @IsNotEmpty()
+    importe: number [];
+
+    @ApiProperty({
+        example: 22.5,
         description: 'baseImponible',
         format: 'decimal',
     })
     
     @IsNotEmpty()
-    @IsArray()
-    baseImponible: number [];
+    baseImponible: number;
 
     @ApiProperty({
         example: '21%',
