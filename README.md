@@ -1,77 +1,54 @@
-<<<<<<< HEAD
-# ts-factura
-=======
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# README
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Descripción del Proyecto
 
-## Description
+Este proyecto es una aplicación backend construida con NestJS, diseñada generar documentos PDF de facturas que vienen de la BBDD. Utiliza MongoDB para el almacenamiento de datos e incluye características para crear, recuperar, actualizar y eliminar facturas y clientes.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Tecnologías Utilizadas
 
-## Installation
+- **NestJS**: Un marco progresivo de Node.js para construir aplicaciones del lado del servidor eficientes y escalables.
+- **MongoDB**: Una base de datos NoSQL para almacenar datos.
+- **Mongoose**: Una biblioteca ODM (Object Data Modeling) para MongoDB y Node.js.
+- **PDFKit**: Una biblioteca de generación de documentos PDF para Node.js.
+- **Swagger**: Para la documentación de la API.
 
-```bash
-$ npm install
-```
+## Características
 
-## Running the app
+- **Gestión de Facturas**: Crear y leer facturas.
+- **Gestión de Clientes**: Crear, leer, actualizar y eliminar clientes.
+- **Generación de PDF**: Generar facturas en PDF para los clientes.
+- **Documentación de API**: Documentación de API generada automáticamente utilizando Swagger.
 
-```bash
-# development
-$ npm run start
+## Instalación
 
-# watch mode
-$ npm run start:dev
+1. Clona el repositorio:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-# production mode
-$ npm run start:prod
-```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-## Test
+3. Configura MongoDB:
+   Asegúrate de tener MongoDB ejecutándose localmente o actualiza la cadena de conexión en `src/app.module.ts` para apuntar a tu instancia de MongoDB.
+   También puedes mockear esto con objetos predefinidos.
 
-```bash
-# unit tests
-$ npm run test
+5. Inicia la aplicación:
+   ```bash
+   npm run start
+   ```
 
-# e2e tests
-$ npm run test:e2e
+6. Accede a la documentación de la API en `http://localhost:3000/api`.
 
-# test coverage
-$ npm run test:cov
-```
 
-## Support
+## Contribuciones
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Gracias a la contribución en una Issue de uno de los compañeros de AdoptaUnJunior.
 
-## Stay in touch
+## Licencia
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
->>>>>>> c6bd52d (crear-factura-done)
+Este proyecto está bajo la Licencia MIT.
